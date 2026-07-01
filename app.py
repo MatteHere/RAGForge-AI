@@ -7,6 +7,7 @@ from app_pages.evaluation import render_evaluation
 from app_pages.knowledge_base import render_knowledge_base
 from app_pages.search_analytics import render_search_analytics
 from config.settings import APP_NAME
+from database.db import initialize_database
 from ui.styles import load_custom_css
 
 
@@ -66,6 +67,7 @@ def render_placeholder_page(title: str, description: str):
 def main():
     configure_page()
     load_custom_css()
+    initialize_database()
 
     if "selected_page" not in st.session_state:
         st.session_state.selected_page = "Dashboard"
