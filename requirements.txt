@@ -1,0 +1,13 @@
+streamlit
+pandas
+numpy
+pymupdf
+python-docx
+python-pptx
+sentence-transformers
+chromadb
+faiss-cpu
+rank-bm25
+requests
+pytest
+ruff
