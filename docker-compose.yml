@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  ragforge-ai:
+    build: .
+    container_name: ragforge-ai
+    restart: unless-stopped
+
+    ports:
+      - "8501:8501"
+
+    volumes:
+      - ./storage:/app/storage
+
+    environment:
+      - PYTHONUNBUFFERED=1

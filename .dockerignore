@@ -1,0 +1,12 @@
+venv
+__pycache__
+.pytest_cache
+.ruff_cache
+.git
+.gitignore
+.vscode
+.idea
+storage/chroma
+storage/faiss
+storage/uploads
+*.log
